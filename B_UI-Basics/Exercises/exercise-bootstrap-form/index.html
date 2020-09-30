@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <title>Bootstrap Form Example</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h2>Contact Us</h2>
+            <!-- The Name Row -->
+            <div class="row">
+                <!-- half of container with  -->
+                <!-- col-md-6 -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="first">First Name</label>
+                        <input type="text" id="first" class="form-control" placeholder="">
+                    </div>
+                </div>
+                <!-- col-md-6 -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="last">Last Name</label>
+                        <input type="text" id="last" class="form-control" placeholder="">
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+            <!-- the Third Row -->
+            <div class="row">
+                <!-- half of container with  -->
+                <!-- col-md-6 -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" class="form-control" placeholder="email">
+                    </div>
+                </div>
+                <!-- col-md-6 -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="url">Your Website <small>Please include http://</small></label>
+                        <input type="text" id="url" class="form-control" placeholder="url">
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <label>When is the best time of day to reach you?</label>
+            <div class="radio">
+
+                <input type="radio" name="contact-prefernces" id="morning" value="am" checked><label
+                    for="morning">Morning</label>
+
+            </div>
+            <div class="radio">
+
+                <input type="radio" name="contact-prefernces" id="evening" value="pm"><label
+                    for="evening">Evening</label>
+
+            </div>
+            <label>Would you like to recieve our email newsletter?</label>
+            <div class="checkbox">
+                <input type="checkbox" value="Sure!" id="check"><label for="check">Sure !</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
