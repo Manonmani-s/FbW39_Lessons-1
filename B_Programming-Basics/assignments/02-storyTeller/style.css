@@ -1,0 +1,21 @@
+body {
+    background-color: salmon;
+    color: white;
+    display: block;
+
+}
+
+button {
+    border-radius: 6px;
+    padding: .5rem;
+    margin-top: 1rem;
+
+    display: block;
+
+}
+
+#story {
+    margin-top: 1rem;
+    font-weight: bolder;
+    color: black;
+}

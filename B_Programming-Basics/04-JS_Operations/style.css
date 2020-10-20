@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.first {
+  background-color: blue;
+  display: inline-block;
+  padding: 50px;
+  margin: 5px;
+}
+
+.second {
+  background-color: red;
+  display: inline-block;
+  padding: 50px;
+  margin: 5px;
+}

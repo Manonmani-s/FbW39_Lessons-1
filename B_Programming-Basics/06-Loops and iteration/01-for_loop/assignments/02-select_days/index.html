@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .box {
+            /* vertical-align: top; */
+            position: relative;
+            top: 20px;
+            width: 100px;
+            height: 100px;
+            border: 1px solid white;
+            margin: auto 5px;
+            background-color: blanchedalmond;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+
+        }
+
+
+
+        button {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p id="options">
+            <input type="checkbox" name="Sat" id="sa" value="Saturday"><label for="sa">Saturday</label>
+            <input type="checkbox" name="Sun" id="su" value="Sunday"><label for="su">Sunday</label>
+            <input type="checkbox" name="Mon" id="mo" value="Monday"><label for="mo">Monday</label>
+            <input type="checkbox" name="Tue" id="tu" value="Tuesday"><label for="tu">Tuesday</label>
+            <input type="checkbox" name="Wed" id="we" value="Wednesday"><label for="we">Wednesday</label>
+            <input type="checkbox" name="Thu" id="th" value="Thursday"><label for="th">Thursday</label>
+            <input type="checkbox" name="Fri" id="fr" value="Friday"><label for="fr">Friday</label>
+
+        </p>
+        
+
+    </form>
+    <button onclick="printDays()">Print days</button>
+    <div class='container'>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+    </div> 
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

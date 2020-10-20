@@ -1,0 +1,35 @@
+.box {
+    background-color: red;
+    color: white;
+    padding: 100px 110px;
+    display: block;
+    margin: 5px;
+
+
+}
+
+/* .box h1 {
+    background-color: green;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+.box p {
+    background-color: lightblue;
+    color: red;
+    padding: 5px;
+} */
+
+.off {
+    display: none;
+}
+
+.on {
+    display: block;
+}
+
+.someClass {
+    background-color: lightblue;
+    color: red;
+}
