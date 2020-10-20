@@ -147,4 +147,4 @@ Returns a string representing the array and its elements.
 
 Adds one or more elements to the front of an array, and returns the new `length` of the array.
 
-[**Reference foer Arrays and Arrays Methods with complete examples**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+[**Reference for Arrays and Arrays Methods with complete examples**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
