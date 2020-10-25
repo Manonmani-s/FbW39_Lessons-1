@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <style>
+        .display{
+            display: flex;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Assignments</h1>
+    <form >
+        <label for="product">Add Product Name</label>
+        <input type="text" id="product">
+        <br><br>
+        <label for="price">Add Product Price</label>
+        <input type="text" id="price">
+        <br><br>
+        <label for="category">Add Product Category</label>
+        <input type="text" id="category">
+        <br><br>
+        <div>
+            <button onclick="createProduct(event)">Create Product</button>
+        </div>
+    </form>
+    <br><br>
+    <button onclick="showProducts()">Show Products</button>
+   
+    <div class="display"></div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

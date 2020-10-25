@@ -12,7 +12,7 @@ let element_1 = cars[0];
 
 ## Properties
 
-- **Array.length**
+- **Array.length** &#9989;
 
 ```javascript
 const clothing = ["shoes", "shirts", "socks", "sweaters"];
@@ -71,7 +71,7 @@ Returns the found `element` in the array, if some element in the array satisfies
 
 Returns the found index in the array, if an element in the array satisfies the testing function, or `-1` if not found.
 
-`Array.forEach()`
+`Array.forEach()` &#9989;
 
 Calls a function for each element in the array.
 
@@ -79,11 +79,11 @@ Calls a function for each element in the array.
 
 Determines whether the array contains a value, returning `true` or `false` as appropriate.
 
-`Array.indexOf()`
+`Array.indexOf()` &#9989;
 
 Returns the first (least) index of an element within the array equal to an element, or `-1` if none is found.
 
-`Array.join()`
+`Array.join()` &#9989;
 
 Joins all elements of an array into a string.
 
@@ -95,19 +95,19 @@ Returns a new `Array Iterator` that contains the keys for each index in the arra
 
 Returns the last (greatest) index of an element within the array equal to an element, or `-1` if none is found.
 
-`Array.prototype.map()`
+`Array.map()`
 
 Returns a new array containing the results of calling a function on every element in this array.
 
-`Array.prototype.pop()`
+`Array.pop()` &#9989;
 
 Removes the last element from an array and returns that element.
 
-`Array.push()`
+`Array.push()` &#9989;
 
 Adds one or more elements to the end of an array, and returns the new `length` of the array.
 
-`Array.prototype.reduce()`
+`Array.reduce()`
 
 Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.
 
@@ -115,11 +115,11 @@ Apply a function against an accumulator and each value of the array (from left-t
 
 Apply a function against an accumulator> and each value of the array (from right-to-left) as to reduce it to a single value.
 
-`Array.reverse()`
+`Array.reverse()` &#9989;
 
 Reverses the order of the elements of an array _in place_. (First becomes the last, last becomes first.)
 
-`Array.shift()`
+`Array.shift()` &#9989;
 
 Removes the first element from an array and returns that element.
 
@@ -131,11 +131,11 @@ Extracts a section of the calling array and returns a new array.
 
 Returns `true` if at least one element in this array satisfies the provided testing function.
 
-`Array.prototype.sort()`
+`Array.sort()`
 
 Sorts the elements of an array in place and returns the array.
 
-`Array.splice()`
+`Array.splice()` &#9989;
 
 Adds and/or removes elements from an array.
 
@@ -143,7 +143,7 @@ Adds and/or removes elements from an array.
 
 Returns a string representing the array and its elements.
 
-`Array.unshift()`
+`Array.unshift()` &#9989;
 
 Adds one or more elements to the front of an array, and returns the new `length` of the array.
 

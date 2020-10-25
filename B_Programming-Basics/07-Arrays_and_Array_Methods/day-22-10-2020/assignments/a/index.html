@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <style>
+        .container{
+            display: flex;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Assignments</h1>
+    <input type="text" id="product">
+    <button onclick="addProduct()" >Add Product</button>
+    
+    <br><br>
+    <input type="text" id="price">
+    
+    <button onclick="addPrice()" >Add Price</button>
+
+    <br><br>
+    <input type="text" id="category">
+    
+    <button onclick="addCategory()" >Add Category</button>
+    <br><br>
+    <button onclick="showProducts()" >Show Products</button>
+    <button onclick="showPrices()" >Show Prices</button>
+    <button onclick="showCategories()" >Show Categories</button>
+   
+    <div class="container">
+        <ul id="productList">
+       
+        </ul>
+        <ul id="priceList">
+           
+        </ul>
+        <ul id="categoryList">
+          
+        </ul>
+
+    </div>
+    <button onclick="createMarket()" >Create Market</button>
+    <script src="index.js"></script>
+</body>
+</html>
