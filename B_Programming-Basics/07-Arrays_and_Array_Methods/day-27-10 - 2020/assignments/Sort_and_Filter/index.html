@@ -21,7 +21,7 @@
         background-color: lightblue;
     }
 
-    button{
+    .btn{
         border: none;
         outline: none;
         background-color: white;
@@ -47,15 +47,42 @@ button:focus{
 
     <table id="table">
         <thead>
-            <th><button onclick="showData()">Data</button></th>
-            <th><button onclick="sortByName()">Name</button>
+            <th><button class="btn" onclick="showDataHandler()">Data</button></th>
+            <th><button class="btn"  onclick="sortByNameHandler()">Name</button>
             </th>
-            <th>    <button onclick="sortByType()">Type</button>
+            <th>    <button class="btn"  onclick="sortByTypeHandler()">Type</button>
             </th>
-            <th><button onclick="sortByRank()">Rank</button></th>
+            <th><button class="btn"  onclick="sortByRankHandler()">Rank</button></th>
 
         </thead>
         <tbody id="display">
+
+        </tbody>
+    </table>
+
+    <div>
+        <label for="filter">Type a Filter Word</label>
+        <input type="text" id="filter">
+        <button onclick="dataFilter()">Filter</button>
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>Choose your word from the below list</label>
+        <ul id="keyWords"></ul>
+    </div>
+
+    <table id="filteredTable">
+        <thead>
+            <th>Data</th>
+            <th>Name
+            </th>
+            <th>   Type
+            </th>
+            <th>Rank</th>
+
+        </thead>
+        <tbody id="filteredDisplay">
 
         </tbody>
     </table>
