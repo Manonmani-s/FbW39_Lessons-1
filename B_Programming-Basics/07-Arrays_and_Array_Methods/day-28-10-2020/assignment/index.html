@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments A</title>
+<style>
+    table{
+        padding: 0;
+        margin: 10px;
+    }
+    th, td {
+        text-align: center;
+        padding: 4px 8px;
+        border-bottom:#777 solid 1px ;
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+    tr:nth-child(even){
+        background-color: lightblue;
+    }
+
+    .btn{
+        border: none;
+        outline: none;
+        background-color: white;
+        cursor: pointer;
+    }
+button:focus{
+    background-color: pink;
+}
+
+.data{
+    background-color: greenyellow;
+}
+.control{
+    margin-top: 10px;
+    margin-left: 2px;
+    display: flex;
+}
+.control button{
+    padding: 2px 5px;
+    margin-left: 4px;
+}
+
+</style>
+
+</head>
+<body>
+    <h1>Assignments B</h1>
+    <div>
+        <label for="filter">Type a word to Filter</label>
+        <input type="text" id="filter">
+        <div class="control"><button onclick="dataFilterNames()">Filter Name</button>
+        <button onclick="dataFilterTypes()">Filter Type</button>
+        <button onclick="dataFilterRanks()">Filter Rank</button></div>
+    </div>
+    <table id="table">
+        <thead>
+            <th><button class="btn" onclick="showDataHandler()">Data</button></th>
+            <th><button class="btn"  onclick="sortByNameHandler()">Name</button>
+            </th>
+            <th>    <button class="btn"  onclick="sortByTypeHandler()">Type</button>
+            </th>
+            <th><button class="btn"  onclick="sortByRankHandler()">Rank</button></th>
+
+        </thead>
+        <tbody id="display">
+
+        </tbody>
+    </table>
+
+  
+  
+
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

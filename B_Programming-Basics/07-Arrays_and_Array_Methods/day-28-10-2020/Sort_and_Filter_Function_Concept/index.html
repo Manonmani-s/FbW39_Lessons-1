@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments A</title>
+<style>
+    table{
+        padding: 0;
+        margin: 10px;
+    }
+    th, td {
+        text-align: center;
+        padding: 4px 8px;
+        border-bottom:#777 solid 1px ;
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+    tr:nth-child(even){
+        background-color: lightblue;
+    }
+
+    .btn{
+        border: none;
+        outline: none;
+        background-color: white;
+        cursor: pointer;
+    }
+button:focus{
+    background-color: pink;
+}
+
+.data{
+    background-color: greenyellow;
+}
+
+</style>
+
+</head>
+<body>
+    <h1>Assignments A</h1>
+    <!-- <button onclick="showData()">Show Data</button> -->
+    <!-- <button onclick="sortByName()">Sort Data By Name</button> -->
+    <!-- <button onclick="sortByType()">Sort Data By Type</button> -->
+    <!-- <button onclick="sortByRank()">Sort Data By Rank</button> -->
+
+    <table id="table">
+        <thead>
+            <th><button class="btn" onclick="showDataHandler()">Data</button></th>
+            <th><button class="btn"  onclick="sortByNameHandler()">Name</button>
+            </th>
+            <th>    <button class="btn"  onclick="sortByTypeHandler()">Type</button>
+            </th>
+            <th><button class="btn"  onclick="sortByRankHandler()">Rank</button></th>
+
+        </thead>
+        <tbody id="display">
+
+        </tbody>
+    </table>
+
+    <div>
+        <label for="filter">Type a Filter Word</label>
+        <input type="text" id="filter">
+        <button onclick="dataFilter()">Filter</button>
+    </div>
+    <br>
+    <br>
+    <div>
+        <label>Choose your word from the below list</label>
+        <ul id="keyWords"></ul>
+    </div>
+
+    <table id="filteredTable">
+        <thead>
+            <th>Data</th>
+            <th>Name
+            </th>
+            <th>   Type
+            </th>
+            <th>Rank</th>
+
+        </thead>
+        <tbody id="filteredDisplay">
+
+        </tbody>
+    </table>
+
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
