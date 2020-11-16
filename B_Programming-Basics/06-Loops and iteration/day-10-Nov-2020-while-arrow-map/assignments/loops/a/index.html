@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Assignment</title>
+    <style>
+        #odd, #even{
+            display: none;
+            position: absolute;
+            margin-top: 20px;
+            width: 50px;
+            padding: 50px;
+            text-align: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        #odd{
+            background-color: green;
+        }
+        #even{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<h2>while assignment</h2>
+<div>
+    <label for="num">Please enter a Valid number</label>
+    <input type="number" id="num" onkeyup="checkNumber(event)">
+</div>
+
+<div id="odd">1</div>
+<div id="even">2</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
