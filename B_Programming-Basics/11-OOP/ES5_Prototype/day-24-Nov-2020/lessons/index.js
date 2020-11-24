@@ -53,7 +53,7 @@ let banana = new Fruite('banana', 'tropical');
 banana.setPrice('6 euros / kg');
 //console.log(banana);
 
-/********* inheritance *********/
+/********* es5 : inheritance *********/
 //Super Type : Father Type
 function Shape(x, y) {
     this.x = x;
@@ -83,9 +83,9 @@ function Circle(x, y, r) {
 Circle.prototype = Object.create( Shape.prototype);
 
 //new method
-Circle.prototype.area = function() {
-        this.area = Math.round(this.r *this.r * Math.PI);
-    }
+Circle.prototype.area = function () {
+    this.area = Math.round(this.r * this.r * Math.PI);
+};
 
 
 let shape = new Shape(1, 2);
