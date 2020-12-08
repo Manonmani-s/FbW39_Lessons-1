@@ -12,4 +12,4 @@
 
 ### Result
 
-![Result](makeMeHappyRobot/awesom-o.png)
+![Result](awesom-o.png)
