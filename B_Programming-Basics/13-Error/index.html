@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+    <style>
+        form{
+            display: inline-block;
+        }
+        #fbw39{
+            list-style-type: none;
+            margin: 0 auto;
+            margin-top: 10px;
+            padding-left: 0;
+            width: 300px;
+        }
+        .warn{
+            visibility: hidden;
+            background-color: red;
+            color: white;
+            margin: 0 auto;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+            width: 500px;
+            height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Error Object &  Handling</h1>
+    <form >
+        <div>
+            <input type="text" name="name" id="name">
+        </div>
+    </form>
+    <button onclick="addName()">Add Name to FbW39 list</button>
+    <div id='error' class="warn"></div>
+    <ul id="fbw39"></ul>
+    <script src="index.js"></script>
+</body>
+</html>

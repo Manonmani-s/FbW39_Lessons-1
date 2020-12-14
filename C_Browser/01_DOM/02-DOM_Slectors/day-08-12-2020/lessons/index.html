@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selectors</title>
+    <style>
+        div>div:hover{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM Selectors</h1>
+    <input type="text" id="search">
+
+    <button onclick="search()">Search</button>
+    <div>
+        <div>No class here</div>
+        <div class="first_div">First group - 1</div>
+        <div class="first_div">First group - 2</div>
+        <div class="first_div">First group - 3</div>
+    </div>
+    <div class='test'>out of the div</div>
+    <div id="second">Second DIV</div>
+    <div>No Selector</div>
+    <div>No Selector</div>
+    <input type="number">
+    <a href="https://www.google.de/">Google</a>
+    <a href="https://twitter.com/">twitter</a>
+    <ul>
+        <li>We are Happy !!!</li>
+        <li>We are Happy !!!</li>
+        <li>We are Happy !!!</li>
+        <li>We are Happy !!!</li>
+        <li>We are Happy !!!</li>
+    </ul>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
