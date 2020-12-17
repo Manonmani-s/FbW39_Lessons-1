@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Contains</title>
+
+    <style>
+        #myDiv{
+            border: 1px solid red;
+        }
+
+        #mySpan{
+            background-color: yellow;
+            color: red;
+        }
+
+        .result{
+            color: blue;
+        }
+
+        .exp{
+            background-color: #bda5a5;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Element.contains</h1>
+    <div id="myDiv">
+        <p>I am a p element inside div, and I have a <span id="mySpan">span</span> element inside me</p>
+    </div>
+
+    <p class="exp">Click the button to find out if the div element contanis a span element</p>
+
+    <button id="tryIt">Click Me</button>
+
+    <p id="demo"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
