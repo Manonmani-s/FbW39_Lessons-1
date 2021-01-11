@@ -1,0 +1,12 @@
+ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+   
+}
+
+li{
+  clear: red;
+  font-size: large;
+  cursor: pointer;
+}
