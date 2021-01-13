@@ -9,12 +9,19 @@ class Calculator extends Component {
 
     state = {
         result:0
-    }    
+    } 
+    
+
+    setResult = value => {
+        this.setState({
+            result:value
+        })
+    }
     render() {
         return (
             <>
                 <Display result={this.state.result }/>
-                <KeyBoard />
+                <KeyBoard giveResult={this.setResult} />
             </>
         )
     }

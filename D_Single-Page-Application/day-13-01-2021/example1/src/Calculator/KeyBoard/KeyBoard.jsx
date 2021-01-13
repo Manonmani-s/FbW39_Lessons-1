@@ -12,7 +12,7 @@ class KeyBoard extends Component {
         // first:0,
         // number2: 0,
         // second:0,
-        // result:0
+        
      }
 
     // getNum1 = (value) => {
@@ -34,9 +34,7 @@ class KeyBoard extends Component {
     }
 
     setResult = (value) => {
-        this.setState({
-            result :  value
-        })
+      this.props.giveResult(value)
     }
 
 
