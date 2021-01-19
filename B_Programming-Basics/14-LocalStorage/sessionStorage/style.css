@@ -1,0 +1,21 @@
+form {
+    display: inline-block;
+}
+
+.form-group{
+    text-align: center;
+    padding-bottom: 25px;
+}
+small{
+    color: gray;
+}
+#todo{
+    /* list-style-type: none; */
+    margin: 0 auto ;
+    width: 400px;
+     padding-left: 5;
+}
+
+a.close {
+    float: right;
+}

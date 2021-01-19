@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage & JSON Object</title>
+    <style>
+         form{
+            display: inline-block;
+        }
+          .warn{
+            visibility: hidden;
+            background-color: red;
+            color: white;
+            margin: 0 auto;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+            width: 500px;
+            height: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Local Storage & JSON Object </h1>
+    <div id="error" class="warn"></div>
+    <button onclick="show()">Show items List </button>
+    <form>
+        <div>
+            <label for="inpt">insert an Item</label>
+            <input type="text" name="item" id="inpt">
+        </div>
+        <div>
+            <input type="submit" name="submit" id="submit" value="Add Item" onclick="addItem(event)">
+        </div>
+        <div>
+            <label for="inpt2">delete an Item</label>
+            <input type="text" name="dItem" id="inpt2">
+        </div>
+        <div>
+            <input type="submit" name="submit" id="delete" value="Delete Item" onclick="deleteItem(event)">
+        </div>
+
+        <div>
+            <input type="text" id="oldItem">
+            <button onclick="replaceBy(event)">replace by</button>
+            <input type="text" id="newItem">
+        </div>
+    </form>
+
+    <ul id="list"></ul>
+
+    <script src="index.js"></script>
+</body>
+</html>
