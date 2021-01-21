@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 
 class TitleHeader extends Component {
     state = {
-        title:''
+        title: '',
+        color: ''
     }
 
     static getDerivedStateFromProps(props, state) {
@@ -18,8 +19,28 @@ class TitleHeader extends Component {
             return null;
         }
     }
+    componentDidMount() {
+        console.log(`component did mount ...`);
+        let header = document.querySelector('h1');
+        header.style.background = 'green';
+    }
+
+    componentDidUpdate() {
+        console.log(`component did update ...`);
+        let header = document.querySelector('h1');
+        header.style.background = 'blue';
+    }
+
+    componentWillUnmount() {
+        console.log('component will unmount .. ');
+        alert('component will unmount');
+        this.setState({
+            title: ''
+        });
+    }
 
     render() {
+        console.log('render ...')
         
         return (
             <h1>
@@ -27,6 +48,8 @@ class TitleHeader extends Component {
             </h1>
         )
     }
+ 
+
 }
 
 export default TitleHeader

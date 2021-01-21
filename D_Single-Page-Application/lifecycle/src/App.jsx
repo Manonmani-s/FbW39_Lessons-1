@@ -14,14 +14,20 @@ class App extends Component {
   changeTitle = title => {
     this.setState({ value: title });
   }
+
+  toggleBtn = () => {
+    this.setState(currentState => ({
+      show: !currentState.show
+    }))
+  }
   render() {
     const List = this.state.data.map(item => <li key={item.id} onClick={()=>this.changeTitle(item.title)}>{item.title}</li>
     );
     return (
       <div className="wrapper">
-        <TitleHeader newTitle={this.state.value} />
+        {this.state.show ? <TitleHeader newTitle={this.state.value} /> : null}
         <ul className='list'>{List}</ul>
-        
+        <button className='btn' onClick={()=>this.toggleBtn()}>Toggle</button>
       </div>
     );
   }
